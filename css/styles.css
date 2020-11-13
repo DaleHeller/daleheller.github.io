@@ -1,0 +1,304 @@
+/* basic styles */
+html {
+    font-size: 100%;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: #000000;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img, video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Begin Header Nave Bar Styles */
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+    overflow: hidden;
+}
+
+.logo, .nav-menu {
+    text-transform: uppercase;
+}
+
+.logo, .nav-item {
+    white-space: nowrap;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    flex: 1 0 33.3%;
+    text-align: center;
+}
+
+.socail-nav-item {
+    flex: 1 1 10%;
+}
+
+.logo a, .nav-menu a {
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    word-spacing: 2rem;
+    padding: 1rem;
+    color: lightgray;
+}
+
+.logo a {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.nav-menu a {
+    font-weight: lighter;
+    letter-spacing: 0.2rem;
+    border-bottom: 1px solid #000000;
+    transition: all ease 0.2s;
+}
+
+.nav-menu a:hover {
+    border-bottom: 1px solid lightgray;
+}
+
+/* Hero Header Navbar Changes */
+
+.hero-nav {
+    background: none;
+    grid-row: 1/ -1;
+    grid-column: 1/ -1;
+    align-content: center;
+    z-index: 10;
+    margin-top: 1.3rem;
+}
+
+.hero-nav .logo a, .hero-nav .nav-menu a {
+    color: lightgray;
+}
+
+.hero-nav .nav-menu a:hover {
+    border-bottom: 1px solid lightgray;
+}
+
+.hero-nav .nav-menu a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* Home Page Hero */ 
+
+.hero-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0px;
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+}
+
+.hero-image-box {
+    height: 100vh;
+    max-width: 100%;
+    display: grid;
+    grid-column: 1/ -1;
+    grid-row: 1/ -1;
+}
+
+.hero-image-box::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-img, .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-video {
+    background-image: url("../img/Web\ Video\ Still\ Grab.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    grid-row: 1/ -1;
+    grid-column: 1/ -1;
+    align-self: center;
+    padding: 1rem;
+    z-index: 10;
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: lightgray;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    text-transform: none;
+}
+
+.hero-text-box {
+    font-size: 1.5rem;
+    margin-top: 35rem;
+    color: lightgray;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 0.55rem 4rem;
+    background: none;
+    color: lightgrey;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border: 1px solid lightgrey;
+    border-radius: 1px;
+    margin-top: 2rem;
+    transition: all ease 0.15s;
+}
+
+.hero-button:hover {
+    transform: scale(1.02)
+}
+.hero-button:active{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles Again */ 
+
+.footer-nav {
+    padding-top: 1rem;
+}
+
+.footer-logo {
+    white-space: nowrap;
+    padding-top: 2rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.footer-social a {
+    color: lightgray;
+    padding: 0 1rem;
+}
+.footer-copyright {
+    text-align: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    color: lightgray;
+    font: lighter;
+}
+
+/* Media Queries */
+
+@media (min-width: 800px) {
+    .nav-bar {
+        line-height: 1.5rem;
+    }
+    .nav-menu {
+        padding: 0 1rem;
+    }
+    .nav-item {
+        flex: 1 1;
+    }
+    .hero-nav {
+        padding-bottom: 0rem;
+    }
+    .hero-heading {
+        font-size: 1.7rem;
+        line-height: 4rem;
+        letter-spacing: 0.3rem;
+    }
+    .hero-text-box {
+        padding: 0rem;
+    }
+    .hero-text {
+        font-size: 1.3rem;
+        line-height: 1rem;
+        letter-spacing: 0.1rem;
+    }
+    .footer-nav {
+        padding-top: 1rem;
+    }
+    .footer-logo {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        max-width: 1800px;
+    }
+    .hero-body {
+        max-width: unset;
+    }
+    .nav-bar {
+        justify-content: space-between;
+        padding: 2rem 2rem;
+        line-height: 1.3rem;
+        margin: 1rem auto 2rem auto;
+    }
+    .logo {
+        margin: 0 0 0 1rem;
+        justify-self: start;
+    }
+    .hero-nav {
+        width: 100%;
+    }
+    .hero-heading {
+        letter-spacing: 0.45rem;
+        font-size: 2rem;
+        word-spacing: 0.5rem;
+    }
+    .hero-text {
+        letter-spacing: 0.2rem;
+        font-size: 1.6rem;
+    }
+    .footer-nav {
+        justify-content: space-evenly;
+    }
+}
