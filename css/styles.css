@@ -441,21 +441,18 @@ img, video {
 
 @media (min-width: 600px) {
     .nav-bar {
-        line-height: 1.5rem;
     }
     .nav-menu {
         padding: 0 1rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
     .nav-item {
         flex: 1 1;
     }
     .hero-nav {
-        padding-bottom: 0rem;
+        padding-bottom: 1rem;
     }
     .hero-heading {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 4rem;
         letter-spacing: 0.3rem;
     }
