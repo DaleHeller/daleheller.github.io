@@ -72,7 +72,8 @@ img, video {
 
 .logo a {
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
 }
 
 .nav-menu a {
@@ -440,8 +441,6 @@ img, video {
 /* Media Queries */
 
 @media (min-width: 600px) {
-    .nav-bar {
-    }
     .nav-menu {
         padding: 0 1rem;
     }
@@ -527,9 +526,9 @@ img, video {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1400px) {
     body {
-        max-width: 1400px;
+        max-width: 1800px;
     }
     .hero-body {
         max-width: unset;
@@ -539,22 +538,24 @@ img, video {
         padding: 2rem 2rem;
         line-height: 1.3rem;
         margin: 1rem auto 2rem auto;
+        font-size: 1rem;
     }
     .logo {
         margin: 0 0 0 1rem;
         justify-self: start;
+        font-size: 3rem
     }
     .hero-nav {
         width: 100%;
     }
     .hero-heading {
         letter-spacing: 0.45rem;
-        font-size: 2rem;
+        font-size: 1.9rem;
         word-spacing: 0.5rem;
     }
     .hero-text {
         letter-spacing: 0.2rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .about-text h1 {
         font-size: 3.2rem;
