@@ -148,6 +148,7 @@ img, video {
 }
 
 .hero-video {
+    background-color: #000000;
     background-image: url("../img/web-video-still-grab.jpg");
     background-repeat: no-repeat;
     background-size: cover;
