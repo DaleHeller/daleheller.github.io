@@ -439,7 +439,7 @@ img, video {
 
 /* Media Queries */
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
     .nav-bar {
         line-height: 1.5rem;
     }
@@ -528,9 +528,9 @@ img, video {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 900px) {
     body {
-        max-width: 1800px;
+        max-width: 1400px;
     }
     .hero-body {
         max-width: unset;
