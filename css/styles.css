@@ -251,12 +251,19 @@ img, video {
 }
 /* Begin Grid Gallery Styles */
 .gallery-page {
-    padding: 1rem 1rem 10rem 2rem;
+    padding: 0rem 1rem 10rem 1rem;
     color: lightgray;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
+    grid-gap: 0.7rem;
+    grid-auto-rows: 300px
 }
 .portfolio-title {
     font-weight: 400;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     text-align: center;
@@ -266,7 +273,7 @@ img, video {
 
 .portfolio-title2 {
     font-weight: 400;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     text-align: center;
@@ -526,6 +533,7 @@ img, video {
     }
 }
 
+
 @media (min-width: 1400px) {
     body {
         max-width: 1800px;
@@ -536,9 +544,9 @@ img, video {
     .nav-bar {
         justify-content: space-between;
         padding: 2rem 2rem;
-        line-height: 1.3rem;
+        line-height: 2.2rem;
         margin: 1rem auto 2rem auto;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .logo {
         margin: 0 0 0 1rem;
@@ -564,6 +572,12 @@ img, video {
     .about-text p {
         font-size: 1.1rem;
         line-height: 1.8rem;
+    }
+    .portfolio-title {
+        font-size: 2.3rem;
+    }
+    .portfolio-title2 {
+        font-size: 2.3rem;
     }
     .footer-nav {
         justify-content: space-evenly;
