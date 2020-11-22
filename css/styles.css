@@ -215,12 +215,23 @@ img, video {
 .about-text {
     margin: 0 auto;
     color: lightgray;
+    font-weight: 400;
+    max-width: 60ch;
 }
 
 .about-text h1 {
-    font-size: 2.5rem;
-    line-height: 2rem;
+    font-size: 2.7rem;
+    line-height: 3rem;
     font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+.about-text p {
+    padding-left: 2rem;
+    letter-spacing: 0.12rem;
+
 }
 
 .about-image img {
@@ -235,7 +246,7 @@ img, video {
 
 .about-social a {
     color: lightgray;
-    padding: 2rem 5rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 5rem;
 }
 /* Begin Grid Gallery Styles */
 .gallery-page {
@@ -248,7 +259,7 @@ img, video {
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     text-align: center;
-    padding: 5.5rem 1rem 1rem 1rem;
+    padding: 4rem 1rem 1rem 1rem;
     line-height: 3rem;
 }
 
