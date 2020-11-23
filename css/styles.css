@@ -229,10 +229,13 @@ img, video {
     letter-spacing: 0.15rem;
     text-align: center;
     letter-spacing: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
 }
 .about-text p {
     padding-left: 2rem;
     letter-spacing: 0.12rem;
+    padding-right: 0.5rem;
 
 }
 
