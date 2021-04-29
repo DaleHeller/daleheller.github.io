@@ -285,9 +285,19 @@ img, video {
     line-height: 3rem;
 }
 
+.portfolio-title3 {
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    padding: 13rem 1rem 1rem 1rem;
+    line-height: 3rem;
+}
+
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 0.65rem;
     grid-auto-rows: 400px;
 }
@@ -540,7 +550,7 @@ img, video {
         max-width: 1800px;
     }
     .hero-body {
-        max-width: unset;
+        max-width: 1800px;
     }
     .nav-bar {
         justify-content: space-between;
@@ -578,6 +588,9 @@ img, video {
         font-size: 2.3rem;
     }
     .portfolio-title2 {
+        font-size: 2.3rem;
+    }
+    .portfolio-title3 {
         font-size: 2.3rem;
     }
     .footer-nav {
